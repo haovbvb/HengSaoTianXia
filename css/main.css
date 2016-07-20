@@ -123,28 +123,30 @@ html, body {
 	transition: all .5s;
 }
 
+
 .page {
 	width: 1000px;
 	height: 900px;
 	display: none;
 	position: absolute;
 }
+.page_00 {
+	left: 845px;
+	top: 1500px;
+}
 .page_01 {
 	left: 2100px;
 	top: 1100px;
 }
-.page_00 {
-	left: 2140px;
-	top: 63px;
-}
+
 .page_02 {
 	left: 1090px;
 	top: 345px;
 }
 .page_03 {
+	left: 2140px;
+	top: 63px;
 
-	left: 845px;
-	top: 1500px;
 }
 .page_04 {
 	left: 1530px;
