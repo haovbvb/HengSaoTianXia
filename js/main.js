@@ -169,9 +169,11 @@ $(function () {
 
     $(".video-title li").click(function () {
         var i = $(this).index();
-        alert(i);
         $(".video-title li a").removeClass("on");
         $(this).find("a").addClass("on");
+
+        $(".video-js").hide();
+        $(".video-js").eq(i).show();
 
     });
 

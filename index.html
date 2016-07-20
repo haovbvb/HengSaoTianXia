@@ -3,24 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>横扫天下</title>
+    <!-- csss -->
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
-
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script  type="text/javascript" src="http://static.sdg-china.com/woool/js/jquery-1.8.3.min.js"></script>
+    <link href="http://vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://res.nie.netease.com/comm/js/nie/ref/css/jquery.fullpage.css">
 
+    <!-- js -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 <div class="wrap" id="wrap">
-	<a class="logo" href="/" ><img src="images/moblie_logo.png" />&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/web_logo.png" /></a>
+	<a class="logo" href="/" ><img src="images/logo.png" class="logo-img"  alt = "logo"/></a>
     <div class="wrapBg"></div>
     <div class="pages">
         <div class="page page_00" style="display:block;">
@@ -123,7 +119,7 @@
                         <span class="input-group-addon" id="basic-addon1">手机系统:</span>
                         <input type="text" class="form-control"  aria-describedby="basic-addon2">
                         <div class="input-group-btn">
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
                           <ul class="dropdown-menu dropdown-menu-right">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -149,14 +145,38 @@
                   <div class="row">
                     <div class="col-xs-4">
                       <ul class="video-title">
-                        <li><a href="javascript:;">动画欣赏(CG视频)</a></li>
-                        <li><a href="javascript:;">世界观（场景动画） </a></li>
-                        <li><a href="javascript:;">作者寄语（作者视频）</a></li>
+                        <li><a href="javascript:;" class="on"></a></li>
+                        <li><a href="javascript:;"> </a></li>
+                        <li><a href="javascript:;"></a></li>
                       </ul>
                     </div>
                     <div class="col-xs-8">
                       <div class="video-content">
                         <!-- 播放内容 -->
+                        <video  class="video-js" controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+                          <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+                          <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+                          <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                          </p>
+                        </video>
+                        <video  class="video-js " controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}" style=" display: none">
+                          <source src="http://vjs.zencdn.net/v/oceans.mp43" type='video/mp4'>
+                          <source src="http://vjs.zencdn.net/v/oceans.webm3" type='video/webm'>
+                          <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                          </p>
+                        </video>
+                        <video  class="video-js" controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}" style=" display: none">
+                          <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+                          <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+                          <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                          </p>
+                        </video>
                       </div>
                     </div>
                   </div>
@@ -244,6 +264,7 @@
     <script type="text/javascript" charset="utf-8" src="js/tab1.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="http://vjs.zencdn.net/5.8/video.min.js"></script>
 
 </body>
 </html>
