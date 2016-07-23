@@ -169,6 +169,7 @@ $(function () {
 
     $(".video-title li").click(function () {
         var i = $(this).index();
+
         $(".video-title li a").removeClass("on");
         $(this).find("a").addClass("on");
 
