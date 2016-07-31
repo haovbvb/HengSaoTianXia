@@ -131,8 +131,10 @@ html, body {
 	position: absolute;
 }
 .page_00 {
-	left: 845px;
-	top: 900px;
+	left: 2140px;
+	top: 63px;
+	/*left: 845px;
+	top: 900px;*/
 }
 .page_01 {
 	left: 2100px;
@@ -144,8 +146,9 @@ html, body {
 	top: 345px;
 }
 .page_03 {
-	left: 2140px;
-	top: 63px;
+	left: 845px;
+	top: 900px;
+
 
 }
 .page_04 {
@@ -153,24 +156,23 @@ html, body {
 	top: 925px;
 }
 .page_05 {
-	left: 2666px;
-	top: 1630px;
+	left: 2400px;
+	top: 1830px;
 }
 .main {
 	width: 1000px;
 	height: 100%;
 }
 
-/*
+
 .blur {
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
 }
 
 
-*/
 .bottom_nav {
 	/*background: url("../images/nav.png") no-repeat;*/
 	width: 86px;
@@ -899,10 +901,10 @@ _top:expression(eval(document.documentElement.scrollTop));
 	background: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/kross_big_ce003b6.png) center center
 }
 .section2_pic_wrap .big_pic.vwill {
-	top:-80px;
+	top:-150px;
 	width: 1087px;
 	height: 946px;
-	margin-left: -523px;
+	margin-left: -503px;
 	margin-top: 50px;
 	background: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/vwill_big_c855e07.png) center center
 }
@@ -1024,10 +1026,17 @@ _top:expression(eval(document.documentElement.scrollTop));
 	height: 48px;
 	display: block;
 	background: url(../images/video_btn_default.png) no-repeat;
+	text-decoration:  none;
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+	color: #3b2a00;
 }
 
 .video-title li a.on {
-	background: url(../images/video_btn_on.png) no-repeat; }
+	background: url(../images/video_btn_on.png) no-repeat;
+	color: #f9e20a
+}
 .video-content {
 	margin-top: 63px;
 	width: 460px;
@@ -1041,12 +1050,13 @@ _top:expression(eval(document.documentElement.scrollTop));
 	position: absolute;
 	width:auto;
 	height:auto;
-	top: 130px;
+	top: 170px;
+	left: -80px;
 }
 
 /* form */
 .page03-box{
-	margin-top: 100px;
+	/*margin-top: 100px;*/
 	position: absolute;
 	width: 1050px;
 }
@@ -1143,4 +1153,20 @@ _top:expression(eval(document.documentElement.scrollTop));
 	background: url(../images/audio_bg.png) no-repeat;
 	width: 798px;
 	height: 382px;
+	margin-top:200px;
+	margin-left: 50px;
+	position: absolute;
+}
+.audio_name{
+	color: #ddd;
+}
+
+.audio_player{
+	width: 200px;
+	height: 200px;
+	margin-top: 120px;
+	margin-left: 420px;
+}
+.audio_player audio{
+	width: 200px;
 }

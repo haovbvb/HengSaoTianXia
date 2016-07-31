@@ -8,16 +8,27 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="http://vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://res.nie.netease.com/comm/js/nie/ref/css/jquery.fullpage.css">
-
+    <!-- 动画 -->
+    <link href="css/fakeLoader.css" rel="stylesheet" type="text/css"/>
     <!-- js -->
     <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- 动画 -->
+
 </head>
 
 <body>
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div id="object"></div>
+      </div>
+    </div>
+  </div>
 <div class="wrap" id="wrap">
 	<a class="logo" href="/" ><img src="images/logo.png" class="logo-img"  alt = "logo"/></a>
-    <div class="wrapBg"></div>
+    <div class="wrapBg blur"></div>
     <div class="pages">
         <div class="page page_00" style="display:block;">
           <div class="main mgauto pr">
@@ -48,10 +59,8 @@
           </div>
       </div>
         <div class="page page_01" >
-          <div class="main mgauto pr">
-            <div class="page01_shu">
-            <img src="images/shu.png" />
-            </div>
+          <div class="page01_shu">
+          <img src="images/shu.png" />
           </div>
         </div>
          <div class="page page_02">
@@ -108,16 +117,16 @@
                   <form class="form-box">
                     <div class="input-group form-box-item">
                       <span class="input-group-addon mobile" id="basic-addon1"></span>
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" placeholder="手机号" aria-describedby="basic-addon2">
                       </div>
                       <div class="input-group form-box-item">
                       <span class="input-group-addon mobile-code" id="basic-addon1"></span>
-                        <input type="text" class="form-control mobile-code-input" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control mobile-code-input" placeholder="验证码" aria-describedby="basic-addon2">
                         <span class="input-group-addon" id="basic-addon2"><button type="button" class="btn">获取验证码</button></span>
                       </div>
                       <div class="input-group form-box-item">
                         <span class="input-group-addon mobile-os" id="basic-addon1"></span>
-                        <input type="text" class="form-control  mobile-os-input"  aria-describedby="basic-addon2">
+                        <input type="text" class="form-control  mobile-os-input"  aria-describedby="basic-addon2" placeholder="选择您的手机系统">
                         <div class="input-group-btn">
                           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
                           <ul class="dropdown-menu dropdown-menu-right">
@@ -133,7 +142,7 @@
                 </div>
               </div>
               <div class="col-xs-6" >
-                <div class="page04_ren"><img src="images/girl.png" width="551" height="512"/></div>
+                <div class="page04_ren"><img src="images/man.png" width="505" height="542"/></div>
               </div>
             </div>
         </div>
@@ -144,9 +153,9 @@
                   <div class="row">
                     <div class="col-xs-4">
                       <ul class="video-title">
-                        <li><a href="javascript:;" class="on"></a></li>
-                        <li><a href="javascript:;"> </a></li>
-                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;" class="on">动画欣赏（CG视频）</a></li>
+                        <li><a href="javascript:;">世界观（场景原画）</a></li>
+                        <li><a href="javascript:;">作者寄语（作者视频）</a></li>
                       </ul>
                     </div>
                     <div class="col-xs-8">
@@ -188,6 +197,14 @@
         <div class="page page_05">
           <div class="audio_bg">
 
+            <div class="audio_player">
+              <div class="audio_name">横扫天下.mp3</div>
+              <audio controls="controls">
+                <source src="http://www.w3school.com.cn/i/horse.ogg" type="audio/ogg" />
+                <source src="http://www.w3school.com.cn/i/horse.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+              </audio>
+            </div>
           </div>
         </div>
 
@@ -227,6 +244,10 @@
 
     <script src="js/main.js"></script>
     <script src="http://vjs.zencdn.net/5.8/video.min.js"></script>
-
+    <script>
+    $(window).load(function(){
+      $("#loading").fadeOut(500);
+    })
+    </script>
 </body>
 </html>
