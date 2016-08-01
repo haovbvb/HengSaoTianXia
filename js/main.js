@@ -154,7 +154,7 @@ $(function () {
     setPos();
 
     $(".bottom_nav li").click(function () {
-        var i = $(this).index() + 1;
+        var i = $(this).index();
         $(".bottom_nav li a").removeClass("on");
         $(this).find("a").addClass("on");
         $(".page").fadeOut(200);

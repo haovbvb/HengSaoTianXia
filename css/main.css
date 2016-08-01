@@ -180,7 +180,7 @@ html, body {
 	z-index:10;
 	float:right;
 	position:relative;
-	top:50px;
+	top:100px;
 }
 .bottom_nav ul {
 	width: 86px;
@@ -194,18 +194,25 @@ html, body {
 	background: url("../images/nav.png") no-repeat;
 	display: block;
 }
-.bottom_nav li a.dh01 {
-	height:176px;
+.bottom_nav li a.dh00 {
 	background-position: 0 0;
 
 }
-.bottom_nav li a.dh01.on{
-	height:176px;
+.bottom_nav li a.dh00.on{
 	background-position: -86px 0;
 }
- .bottom_nav li a.dh01:hover {
-	height:176px;
+ .bottom_nav li a.dh00:hover {
 	background-position: -86px 0;
+}
+.bottom_nav li a.dh01 {
+	background-position: 0 -88px;
+
+}
+.bottom_nav li a.dh01.on{
+	background-position: -86px -88px;
+}
+ .bottom_nav li a.dh01:hover {
+	background-position: -86px -88px;
 }
 
 .bottom_nav li a.dh02 {
