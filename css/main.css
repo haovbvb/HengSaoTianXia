@@ -292,7 +292,7 @@ html, body {
 	position: absolute;
 	width:auto;
 	height:auto;
-	top: 100px;
+	top: 160px;
 	text-align: center;
 }
 .layer1 {
@@ -741,9 +741,9 @@ _top:expression(eval(document.documentElement.scrollTop));
 .section2_info_wrap .tab_bar .tab {
 	float: left;
 	margin-right: 20px;
-	width: 89px;
-	height: 102px;
-	background: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/fate_t_899aa4d.png);
+	width: 77px;
+	height: 87px;
+	background: url(../images/zhiye/gan/gan_n.png);
 	position: relative;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
@@ -755,9 +755,9 @@ _top:expression(eval(document.documentElement.scrollTop));
 	position: absolute;
 	top: -33px;
 	left: -14px;
-	height: 135px;
-	width: 125px;
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/fate_act_8625c9b.png);
+	height: 137px;
+	width: 173px;
+	background-image: url(../images/zhiye/gan/gan_on.png);
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: all .3s linear;
@@ -898,7 +898,7 @@ _top:expression(eval(document.documentElement.scrollTop));
 	width: 1247px;
 	height: 1000px;
 	margin-left: -740px;
-	background: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/fate_big_447fca8.png) center center
+	background: url(../images/zhiye/gan/gan_big.png) center no-repeat;
 }
 .section2_pic_wrap .big_pic.kross {
 	top:-80px;
