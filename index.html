@@ -1,251 +1,221 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>横扫天下</title>
-    <!-- csss -->
-    <link href="css/main.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="http://vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://res.nie.netease.com/comm/js/nie/ref/css/jquery.fullpage.css">
-    <!-- 动画 -->
-    <link href="css/fakeLoader.css" rel="stylesheet" type="text/css"/>
-    <!-- js -->
-    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<title>横扫天下</title>
+<!-- csss -->
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href="http://vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://res.nie.netease.com/comm/js/nie/ref/css/jquery.fullpage.css">
+<!-- 动画 -->
+<link href="css/fakeLoader.css" rel="stylesheet" type="text/css"/>
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- 动画 -->
+<!-- 动画 -->
 
 </head>
 
 <body>
-  <div id="loading">
-    <div id="loading-center">
-      <div id="loading-center-absolute">
-        <div id="object"></div>
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div id="object"></div>
+    </div>
+  </div>
+</div>
+<div class="wrap" id="wrap"> <a class="logo" href="/" ><img src="images/logo.png" class="logo-img"  alt = "logo"/></a>
+  <div class="wrapBg blur"></div>
+  <div class="pages">
+    <div class="page page_00" style="display:block;">
+      <div class="main mgauto pr">
+        <ul class="scene">
+          <li class="layer" data-depth="0.10">
+            <div class="layer1 png"></div>
+          </li>
+          <li class="layer" data-depth="0.20">
+            <div class="layer2 png"></div>
+          </li>
+          <li class="layer" data-depth="0.20">
+            <div class="layer3 png"></div>
+          </li>
+          <li class="layer" data-depth="0.60">
+            <div class="layer4 png"></div>
+          </li>
+          <li class="layer" data-depth="0.40">
+            <div class="layer5 png"></div>
+          </li>
+          <li class="layer" data-depth="0.10">
+            <div class="layer6 png"></div>
+          </li>
+        </ul>
+        <div class="page01_title"> <img src="images/index_big_image.png" /> </div>
+      </div>
+    </div>
+    <div class="page page_01" >
+      <div class="page01_shu"> <img src="images/shu.png" /> </div>
+    </div>
+    <div class="page page_02">
+      <div class="main mgauto pr">
+        <div class="section section2 fp-section show active fp-completely" data-anchor="page2" style="height: 556px;">
+          <div class="com_title title1" style="display: none;"></div>
+          <div class="section2_info_wrap">
+            <div class="tab_bar clearfix"> 
+            <a href="javascript:void(0);" data-tab="fate" class="tab fate_tab active"><span></span></a>
+            <a href="javascript:void(0);" data-tab="kross" class="tab kross_tab"><span></span></a> 
+            <a href="javascript:void(0);" data-tab="vwill" class="tab vwill_tab"><span></span></a> 
+            <a href="javascript:void(0);" data-tab="shen" class="tab shen_tab"><span></span></a> 
+            </div>
+            <div class="role_info_wrap"><span class="name fate"></span>
+              <p class="txt">“我无意与任何人为敌。不过，挡在路上的另当别论。"</p>
+              <h3>人物介绍</h3>
+              <p class="txt">银发皓目的菲特，剑术精湛，招式多变。他善用灵魂之力注入剑中，使冰冷锋利的剑气破刃而出，给予四面八方的敌人致命打击。身躯轻盈矫健，战斗走位瞬移，剑一出鞘，必定刀刀见血。</p>
+              <h3>人物技能</h3>
+              <div class="skills_wrap"> <a href="javascript:void(0);" class="turn_page"></a>
+                <p class="skill_extra" style="display: none;">迅速拔刀，然后连续对前方地面敌人造成多段斩击。</p>
+                <div class="skillsbtn_wrap">
+                  <div class="skillsbtn_content"> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="挥刀前冲，将沿途的所有怪物全部挑空。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/1.png"> <span>魂击斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="迅速拔刀，然后连续对前方地面敌人造成多段斩击。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/2.png"> <span>急速连斩</span><em class="fate"></em><i class=""></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="瞬间连续在身体周围划出多道魂气，最后划破一刀将魂气激发，攻击大范围的敌人。对于近处的敌人，具有粘附效果。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/3.png"> <span>觉醒之魂</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="用刀聚集灵魂之力并砸落地面，对地面和空中的单位同时造成伤害。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/4.png"> <span>空落斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="用魂火注入裂魂刀里强化力量，随后瞬间拔刀穿越地面的所有敌人。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/5.png"> <span>真空拔刀斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="原地瞬间消失，然后在远方出现自己的分身。分身将怪物迅速的推进到自己的位置之后，消散成魂状并攻击敌人。角色消失时，角色处于短暂无敌的状态。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/6.png"> <span>双身之魂</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="迅速朝前方突进的三段攻击。可以使用摇杆控制攻击的方向。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/7.png"> <span>疾风斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="瞬间斩出一刀，并留下自己的灵魂残像吸引敌人，残像经过短暂时间爆开，浮空敌人。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/8.png"> <span>残影陷阱</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="朝天跃起后对在空中来回拔刀穿梭的招式。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/9.png"> <span>魂火爆发</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
+                    <input type="hidden" class="skill_describe" value="连续在空气中划过两道刀气，然后将刀气推送出去攻击敌人。">
+                    <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/10.png"> <span>十字封印斩</span><em class="fate"></em><i></i> </a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section2_pic_wrap">
+            <div id="frame_wrap" style=" display: none"></div>
+            <div class="big_pic"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page page_03">
+      <div class="row page03-box">
+        <div class="col-xs-6" >
+          <div class="page_03_form">
+            <form class="form-box">
+              <div class="input-group form-box-item"> <span class="input-group-addon mobile" id="basic-addon1"></span>
+                <input type="text" class="form-control" placeholder="手机号" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group form-box-item"> <span class="input-group-addon mobile-code" id="basic-addon1"></span>
+                <input type="text" class="form-control mobile-code-input" placeholder="验证码" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">
+                <button type="button" class="btn">获取验证码</button>
+                </span> </div>
+              <div class="input-group form-box-item"> <span class="input-group-addon mobile-os" id="basic-addon1"></span>
+                <input type="text" class="form-control  mobile-os-input"  aria-describedby="basic-addon2" placeholder="选择您的手机系统">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">iOS苹果系统</a></li>
+                    <li><a href="#">Android安卓系统</a></li>
+                    <!-- <li role="separator" class="divider"></li> -->
+                    
+                  </ul>
+                </div>
+                <!-- /btn-group --> 
+              </div>
+              <!-- /input-group -->
+              <button type="button" class=" commit-btn"><img src = "images/commit_btn.png"></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xs-6" >
+          <div class="page04_ren"><img src="images/man.png" width="505" height="542"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="page page_04">
+      <div class="main mgauto pr">
+        <div class="clear"></div>
+        <div class="page05_jz">
+          <div class="row">
+            <div class="col-xs-4">
+              <ul class="video-title">
+                <li><a href="javascript:;" class="on">动画欣赏（CG视频）</a></li>
+                <li><a href="javascript:;">世界观（场景原画）</a></li>
+                <li><a href="javascript:;">作者寄语（作者视频）</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-8">
+              <div class="video-content"> 
+                <!-- 播放内容 -->
+                <video id = "my-video-0"  class="video-js" controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+                  <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+                  <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+                  <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+                </video>
+                <video id = "my-video-1" class="video-js " controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}" style=" display: none">
+                  <source src="http://vjs.zencdn.net/v/oceans.mp43" type='video/mp4'>
+                  <source src="http://vjs.zencdn.net/v/oceans.webm3" type='video/webm'>
+                  <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+                </video>
+                <video id = "my-video-2" class="video-js" controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}" style=" display: none">
+                  <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+                  <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+                  <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page page_05">
+      <div class="audio_bg">
+        <div class="audio_player">
+          <div class="audio_name">横扫天下.mp3</div>
+          <audio controls>
+            <source src="http://www.w3school.com.cn/i/horse.ogg" type="audio/ogg" />
+            <source src="http://www.w3school.com.cn/i/horse.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element. </audio>
+        </div>
       </div>
     </div>
   </div>
-<div class="wrap" id="wrap">
-	<a class="logo" href="/" ><img src="images/logo.png" class="logo-img"  alt = "logo"/></a>
-    <div class="wrapBg blur"></div>
-    <div class="pages">
-        <div class="page page_00" style="display:block;">
-          <div class="main mgauto pr">
-              <ul class="scene">
-                  <li class="layer" data-depth="0.10">
-                      <div class="layer1 png"></div>
-                  </li>
-                  <li class="layer" data-depth="0.20">
-                      <div class="layer2 png"></div>
-                  </li>
-                  <li class="layer" data-depth="0.20">
-                      <div class="layer3 png"></div>
-                  </li>
-                  <li class="layer" data-depth="0.60">
-                      <div class="layer4 png"></div>
-                  </li>
-                  <li class="layer" data-depth="0.40">
-                      <div class="layer5 png"></div>
-                  </li>
-                  <li class="layer" data-depth="0.10">
-                      <div class="layer6 png"></div>
-                  </li>
-              </ul>
-              <div class="page01_title">
-                  <img src="images/index_big_image.png" />
-
-              </div>
-          </div>
-      </div>
-        <div class="page page_01" >
-          <div class="page01_shu">
-          <img src="images/shu.png" />
-          </div>
-        </div>
-         <div class="page page_02">
-            <div class="main mgauto pr">
-                <div class="section section2 fp-section show active fp-completely" data-anchor="page2" style="height: 556px;">
-                    <div class="com_title title1" style="display: none;"></div>
-                    <div class="section2_info_wrap">
-                        <div class="tab_bar clearfix"> <a href="javascript:void(0);" data-tab="fate" class="tab fate_tab active"><span></span></a> <a href="javascript:void(0);" data-tab="kross" class="tab kross_tab"><span></span></a> <a href="javascript:void(0);" data-tab="vwill" class="tab vwill_tab"><span></span></a> </div>
-                        <div class="role_info_wrap"><span class="name fate"></span>
-                        <p class="txt">“我无意与任何人为敌。不过，挡在路上的另当别论。"</p>
-                        <h3>人物介绍</h3>
-                        <p class="txt">银发皓目的菲特，剑术精湛，招式多变。他善用灵魂之力注入剑中，使冰冷锋利的剑气破刃而出，给予四面八方的敌人致命打击。身躯轻盈矫健，战斗走位瞬移，剑一出鞘，必定刀刀见血。</p>
-                        <h3>人物技能</h3>
-                        <div class="skills_wrap"> <a href="javascript:void(0);" class="turn_page"></a>
-                            <p class="skill_extra" style="display: none;">迅速拔刀，然后连续对前方地面敌人造成多段斩击。</p>
-                            <div class="skillsbtn_wrap">
-                            <div class="skillsbtn_content"> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="挥刀前冲，将沿途的所有怪物全部挑空。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/1.png"> <span>魂击斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="迅速拔刀，然后连续对前方地面敌人造成多段斩击。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/2.png"> <span>急速连斩</span><em class="fate"></em><i class=""></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="瞬间连续在身体周围划出多道魂气，最后划破一刀将魂气激发，攻击大范围的敌人。对于近处的敌人，具有粘附效果。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/3.png"> <span>觉醒之魂</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="用刀聚集灵魂之力并砸落地面，对地面和空中的单位同时造成伤害。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/4.png"> <span>空落斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="用魂火注入裂魂刀里强化力量，随后瞬间拔刀穿越地面的所有敌人。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/5.png"> <span>真空拔刀斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="原地瞬间消失，然后在远方出现自己的分身。分身将怪物迅速的推进到自己的位置之后，消散成魂状并攻击敌人。角色消失时，角色处于短暂无敌的状态。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/6.png"> <span>双身之魂</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="迅速朝前方突进的三段攻击。可以使用摇杆控制攻击的方向。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/7.png"> <span>疾风斩</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="瞬间斩出一刀，并留下自己的灵魂残像吸引敌人，残像经过短暂时间爆开，浮空敌人。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/8.png"> <span>残影陷阱</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="朝天跃起后对在空中来回拔刀穿梭的招式。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/9.png"> <span>魂火爆发</span><em class="fate"></em><i></i> </a> <a href="javascript:void(0);" class="icon">
-                              <input type="hidden" class="skill_describe" value="连续在空气中划过两道刀气，然后将刀气推送出去攻击敌人。">
-                              <img src="http://res.hzhy.netease.com/pc/zt/20160316140351/data/fate/10.png"> <span>十字封印斩</span><em class="fate"></em><i></i> </a> </div>
-                          </div>
-                          </div>
-                      </div>
-                      </div>
-                    <div class="section2_pic_wrap">
-                        <div id="frame_wrap" style=" display: none"></div>
-                    	<div class="big_pic"></div>
-                    </div>
-          		</div>
-            </div>
-
-        </div>
-        <div class="page page_03">
-            <div class="row page03-box">
-              <div class="col-xs-6" >
-                <div class="page_03_form">
-                  <form class="form-box">
-                    <div class="input-group form-box-item">
-                      <span class="input-group-addon mobile" id="basic-addon1"></span>
-                        <input type="text" class="form-control" placeholder="手机号" aria-describedby="basic-addon2">
-                      </div>
-                      <div class="input-group form-box-item">
-                      <span class="input-group-addon mobile-code" id="basic-addon1"></span>
-                        <input type="text" class="form-control mobile-code-input" placeholder="验证码" aria-describedby="basic-addon2">
-                        <span class="input-group-addon" id="basic-addon2"><button type="button" class="btn">获取验证码</button></span>
-                      </div>
-                      <div class="input-group form-box-item">
-                        <span class="input-group-addon mobile-os" id="basic-addon1"></span>
-                        <input type="text" class="form-control  mobile-os-input"  aria-describedby="basic-addon2" placeholder="选择您的手机系统">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
-                          <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="#">iOS苹果系统</a></li>
-                            <li><a href="#">Android安卓系统</a></li>
-                            <!-- <li role="separator" class="divider"></li> -->
-
-                          </ul>
-                        </div><!-- /btn-group -->
-                      </div> <!-- /input-group -->
-                      <button type="button" class=" commit-btn"><img src = "images/commit_btn.png"></button>
-                  </form>
-                </div>
-              </div>
-              <div class="col-xs-6" >
-                <div class="page04_ren"><img src="images/man.png" width="505" height="542"/></div>
-              </div>
-            </div>
-        </div>
-        <div class="page page_04">
-            <div class="main mgauto pr">
-              <div class="clear"></div>
-                <div class="page05_jz">
-                  <div class="row">
-                    <div class="col-xs-4">
-                      <ul class="video-title">
-                        <li><a href="javascript:;" class="on">动画欣赏（CG视频）</a></li>
-                        <li><a href="javascript:;">世界观（场景原画）</a></li>
-                        <li><a href="javascript:;">作者寄语（作者视频）</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-xs-8">
-                      <div class="video-content">
-                        <!-- 播放内容 -->
-                        <video id = "my-video-0"  class="video-js" controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
-                          <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
-                          <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
-                          <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a web browser that
-                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                          </p>
-                        </video>
-                        <video id = "my-video-1" class="video-js " controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}" style=" display: none">
-                          <source src="http://vjs.zencdn.net/v/oceans.mp43" type='video/mp4'>
-                          <source src="http://vjs.zencdn.net/v/oceans.webm3" type='video/webm'>
-                          <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a web browser that
-                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                          </p>
-                        </video>
-                        <video id = "my-video-2" class="video-js" controls preload="auto" width="460" height="280" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}" style=" display: none">
-                          <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
-                          <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
-                          <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a web browser that
-                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                          </p>
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                </div>
-            </div>
-        </div>
-        <div class="page page_05">
-          <div class="audio_bg">
-
-            <div class="audio_player">
-              <div class="audio_name">横扫天下.mp3</div>
-              <audio controls="controls">
-                <source src="http://www.w3school.com.cn/i/horse.ogg" type="audio/ogg" />
-                <source src="http://www.w3school.com.cn/i/horse.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-
 </div>
-
-
 <div class="bottom_nav">
-
-    <ul class="">
-        <li><a href="javascript:;" class="dh00 on"></a></li>
-        <li><a href="javascript:;" class="dh01"></a></li>
-        <li><a href="javascript:;" class="dh02"></a></li>
-        <li><a href="javascript:;" class="dh03"></a></li>
-        <li><a href="javascript:;" class="dh04"></a></li>
-        <li><a href="javascript:;" class="dh05"></a></li>
-    </ul>
+  <ul class="">
+    <li><a href="javascript:;" class="dh00 on"></a></li>
+    <li><a href="javascript:;" class="dh01"></a></li>
+    <li><a href="javascript:;" class="dh02"></a></li>
+    <li><a href="javascript:;" class="dh03"></a></li>
+    <li><a href="javascript:;" class="dh04"></a></li>
+    <li><a href="javascript:;" class="dh05"></a></li>
+  </ul>
 </div>
-
-
 <div class="bg"></div>
+<div class="mydiv pic00"> <a class="close" href="javascript:;" onclick="close_layer()"></a> </div>
 
-<div class="mydiv pic00">
-    <a class="close" href="javascript:;" onclick="close_layer()"></a>
-</div>
+<!-- other --> 
 
-
-
-	<!-- other -->
-
-    <script charset="utf-8" src="http://res.nie.netease.com/comm/js/jquery(mixNIE).1.11.js"></script>
-    <script type="text/javascript" src="http://res.nie.netease.com/comm/js/nie/ref/jquery.superslide.js"></script>
-    <script src="http://res.nie.netease.com/comm/js/nie/ref/baidutemplate.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/lib_tab2.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/tab1.js"></script>
-
-    <script src="js/main.js"></script>
-    <script src="http://vjs.zencdn.net/5.8/video.min.js"></script>
-    <script>
+<script charset="utf-8" src="http://res.nie.netease.com/comm/js/jquery(mixNIE).1.11.js"></script> 
+<script type="text/javascript" src="http://res.nie.netease.com/comm/js/nie/ref/jquery.superslide.js"></script> 
+<script src="http://res.nie.netease.com/comm/js/nie/ref/baidutemplate.js"></script> 
+<script type="text/javascript" charset="utf-8" src="js/lib_tab2.js"></script> 
+<script type="text/javascript" charset="utf-8" src="js/tab1.js"></script> 
+<script src="js/main.js"></script> 
+<script src="http://vjs.zencdn.net/5.8/video.min.js"></script> 
+<script>
     $(window).load(function(){
       $("#loading").fadeOut(500);
     })

@@ -292,8 +292,9 @@ html, body {
 	position: absolute;
 	width:auto;
 	height:auto;
-	top: 160px;
+	top: 130px;
 	text-align: center;
+	left: -50px;
 }
 .layer1 {
 	position: absolute;
@@ -753,8 +754,8 @@ _top:expression(eval(document.documentElement.scrollTop));
 }
 .section2_info_wrap .tab_bar .tab span {
 	position: absolute;
-	top: -33px;
-	left: -14px;
+	top: -53px;
+    left: -34px;
 	height: 137px;
 	width: 173px;
 	background-image: url(../images/zhiye/gan/gan_on.png);
@@ -767,37 +768,50 @@ _top:expression(eval(document.documentElement.scrollTop));
 	transition: all .3s linear
 }
 .section2_info_wrap .tab_bar .tab:hover {
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/fate_h_64e3d19.png)
+	background-image: url(../images/zhiye/gan/gan_on.png);
 }
 .section2_info_wrap .tab_bar .tab.active span {
 	opacity: 1;
 	visibility: visible
 }
 .section2_info_wrap .tab_bar .tab.kross_tab {
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/kross_t_933a404.png)
+	background-image: url(../images/zhiye/luo/luo_n.png)
 }
 .section2_info_wrap .tab_bar .tab.kross_tab span {
 	left: -1px;
-	top: -43px;
-	height: 145px;
-	width: 109px;
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/kross_act_e59d7e6.png)
+    top: -30px;
+    height: 118px;
+    width: 77px;
+	background-image: url(../images/zhiye/luo/luo_on.png)
 }
 .section2_info_wrap .tab_bar .tab.kross_tab:hover {
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/kross_h_804ed85.png)
+	background-image: url(../images/zhiye/luo/luo_on.png)
 }
 .section2_info_wrap .tab_bar .tab.vwill_tab {
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/vwill_t_3d87b26.png)
+	background-image: url(../images/zhiye/ming/ming_n.png)
 }
 .section2_info_wrap .tab_bar .tab.vwill_tab span {
-	top: -11px;
-	left: 0;
-	height: 112px;
-	width: 89px;
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/vwill_act_89fb998.png)
+	top: -35px;
+    left: -50px;
+    height: 122px;
+    width: 197px;
+	background-image: url(../images/zhiye/ming/ming_on.png)
 }
 .section2_info_wrap .tab_bar .tab.vwill_tab:hover {
-	background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/vwill_h_c91bdfb.png)
+	background-image: url(../images/zhiye/ming/ming_on.png)
+}
+.section2_info_wrap .tab_bar .tab.shen_tab {
+	background-image: url(../images/zhiye/shen/shen_n.png)
+}
+.section2_info_wrap .tab_bar .tab.shen_tab span {
+	top: -0px;
+    left: -0px;
+    height: 87px;
+    width: 77px;
+	background-image: url(../images/zhiye/shen/shen_on.png)
+}
+.section2_info_wrap .tab_bar .tab.shen_tab:hover {
+	background-image: url(../images/zhiye/shen/shen_on.png)
 }
 .section2_info_wrap .name {
 	margin-bottom: 15px;
@@ -895,25 +909,33 @@ _top:expression(eval(document.documentElement.scrollTop));
 }
 .section2_pic_wrap .big_pic.fate {
 	top:-80px;
-	width: 1247px;
-	height: 1000px;
-	margin-left: -740px;
+	width: 498px;
+	height: 537px;
+	margin-left: -490px;
 	background: url(../images/zhiye/gan/gan_big.png) center no-repeat;
 }
 .section2_pic_wrap .big_pic.kross {
 	top:-80px;
-	width: 980px;
-	height: 1000px;
+	width: 411px;
+	height: 537px;
 	margin-left: -555px;
-	background: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/kross_big_ce003b6.png) center center
+	background: url(../images/zhiye/luo/luo_big.png) center center no-repeat;
 }
 .section2_pic_wrap .big_pic.vwill {
 	top:-150px;
-	width: 1087px;
-	height: 946px;
+	width: 642px;
+	height: 569px;
 	margin-left: -503px;
 	margin-top: 50px;
-	background: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/vwill_big_c855e07.png) center center
+	background: url(../images/zhiye/ming/ming_big.png) center center no-repeat;
+}
+
+.section2_pic_wrap .big_pic.shen {
+    top: -80px;
+    width: 625px;
+    height: 336px;
+    margin-left: -490px;
+    background: url(../images/zhiye/shen/shen_big.png) center no-repeat;
 }
 #frame_wrap.fate {
 	width: 874px;
