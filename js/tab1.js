@@ -853,6 +853,66 @@ var SKILL = [{
     hero: "vwill",
     name: "&#39746;&#24433;&#19968;&#38378;",
     describe: "&#22312;&#39746;&#28779;&#20013;&#27880;&#20837;&#20912;&#38634;&#30340;&#23041;&#21147;&#65292;&#20197;&#20923;&#27668;&#25915;&#20987;&#22823;&#33539;&#22260;&#30340;&#25932;&#20154;&#12290;"
+},
+{
+    pic: "1",
+    hero: "shen",
+    name: "1111111",
+    describe: "&#22312;&#21069;&#26041;&#21628;&#21796;&#31526;&#25991;&#65292;&#28982;&#21518;&#20914;&#21050;&#23558;&#25932;&#20154;&#36830;&#32493;&#25361;&#31354;&#12290;"
+},
+{
+    pic: "2",
+    hero: "shen",
+    name: "&#22278;&#33310;&#19968;&#38378;",
+    describe: "&#21010;&#20986;&#20912;&#38684;&#30340;&#31526;&#25991;&#23558;&#21608;&#22260;&#25932;&#20154;&#25171;&#23450;&#65292;&#28982;&#21518;&#31361;&#21050;&#19968;&#21073;&#23558;&#25932;&#20154;&#28014;&#31354;&#12290;"
+},
+{
+    pic: "3",
+    hero: "shen",
+    name: "&#30862;&#26376;",
+    describe: "&#20174;&#31354;&#20013;&#21484;&#21796;&#20912;&#38684;&#40857;&#21367;&#39118;&#65292;&#20463;&#20914;&#34989;&#20987;&#22320;&#38754;&#30340;&#25932;&#20154;&#12290;"
+},
+{
+    pic: "4",
+    hero: "shen",
+    name: "&#26292;&#39118;&#38634;",
+    describe: "&#20174;&#31354;&#20013;&#21484;&#21796;&#21073;&#38632;&#34989;&#20987;&#22320;&#38754;&#12290;"
+},
+{
+    pic: "5",
+    hero: "shen",
+    name: "&#26329;&#20809;&#20043;&#39118;",
+    describe: "&#21628;&#21796;&#20912;&#38684;&#22899;&#31070;&#21561;&#20986;&#25282;&#26195;&#20043;&#39118;&#65292;&#35206;&#30422;&#22823;&#38754;&#31215;&#30340;&#25932;&#20154;&#12290;"
+},
+{
+    pic: "6",
+    hero: "shen",
+    name: "&#38684;&#20043;&#36951;&#20135;",
+    describe: "&#21484;&#21796;&#20912;&#34678;&#30340;&#27861;&#38453;&#24182;&#21628;&#21796;&#20912;&#34678;&#25915;&#20987;&#21069;&#26041;&#25152;&#26377;&#25932;&#20154;&#12290;"
+},
+{
+    pic: "7",
+    hero: "shen",
+    name: "&#20912;&#20043;&#23553;&#21360;",
+    describe: "&#20197;&#24555;&#36895;&#30340;&#33151;&#25216;&#23558;&#25932;&#20154;&#25361;&#31354;&#20043;&#21518;&#65292;&#20877;&#36805;&#36895;&#31361;&#21069;&#36861;&#20987;&#12290;"
+},
+{
+    pic: "8",
+    hero: "shen",
+    name: "&#38378;&#29616;",
+    describe: "&#30636;&#38388;&#31227;&#21160;&#21040;&#38468;&#36817;&#30340;&#20301;&#32622;&#65292;&#36530;&#36991;&#21363;&#23558;&#21040;&#26469;&#30340;&#25915;&#20987;&#12290;&#21487;&#20197;&#22312;&#21463;&#20987;&#26102;&#20351;&#29992;&#12290;"
+},
+{
+    pic: "9",
+    hero: "shen",
+    name: "&#38684;&#20923;&#20043;&#29699;",
+    describe: "&#20197;&#25163;&#20013;&#30340;&#33457;&#20026;&#23186;&#20171;&#65292;&#21484;&#21796;&#21560;&#38468;&#21608;&#22260;&#25932;&#20154;&#30340;&#20912;&#38684;&#20043;&#29699;&#12290;"
+},
+{
+    pic: "10",
+    hero: "shen",
+    name: "&#39746;&#24433;&#19968;&#38378;",
+    describe: "&#22312;&#39746;&#28779;&#20013;&#27880;&#20837;&#20912;&#38634;&#30340;&#23041;&#21147;&#65292;&#20197;&#20923;&#27668;&#25915;&#20987;&#22823;&#33539;&#22260;&#30340;&#25932;&#20154;&#12290;"
 }];;
 nie.define("Pop",
 function() {
@@ -1230,6 +1290,7 @@ function() {
             t.find("i").addClass("show"),
             e.text(t.find(".skill_describe").val()),
             e.fadeIn(200)
+            console.log(e);
         }),
         a.on("mouseleave", ".icon",
         function() {
@@ -1283,9 +1344,11 @@ function() {
     },
     roleChange = function(roleName) {
         for (var TEXT = {
-            fate: ["\u201c\u6211\u65e0\u610f\u4e0e\u4efb\u4f55\u4eba\u4e3a\u654c\u3002\u4e0d\u8fc7\uff0c\u6321\u5728\u8def\u4e0a\u7684\u53e6\u5f53\u522b\u8bba\u3002", "\u94f6\u53d1\u7693\u76ee\u7684\u83f2\u7279\uff0c\u5251\u672f\u7cbe\u6e5b\uff0c\u62db\u5f0f\u591a\u53d8\u3002\u4ed6\u5584\u7528\u7075\u9b42\u4e4b\u529b\u6ce8\u5165\u5251\u4e2d\uff0c\u4f7f\u51b0\u51b7\u950b\u5229\u7684\u5251\u6c14\u7834\u5203\u800c\u51fa\uff0c\u7ed9\u4e88\u56db\u9762\u516b\u65b9\u7684\u654c\u4eba\u81f4\u547d\u6253\u51fb\u3002\u8eab\u8eaf\u8f7b\u76c8\u77eb\u5065\uff0c\u6218\u6597\u8d70\u4f4d\u77ac\u79fb\uff0c\u5251\u4e00\u51fa\u9798\uff0c\u5fc5\u5b9a\u5200\u5200\u89c1\u8840\u3002"],
-            kross: ["\u201c\u5f3a\u8005\u6709\u5f3a\u8005\u7684\u751f\u5b58\u65b9\u5f0f\uff01", "\u70ed\u8840\u7684\u5e93\u6d1b\u65af\uff0c\u62e5\u6709\u94a2\u94c1\u822c\u7684\u8eab\u8eaf\uff0c\u7206\u53d1\u529b\u5341\u8db3\u3002\u53cc\u624b\u94c1\u62f3\u805a\u96c6\u9b42\u706b\uff0c\u5f3a\u5927\u7684\u7834\u574f\u529b\u91cf\u9707\u98de\u4e00\u5207\u654c\u4eba\u3002\u51fa\u62f3\u901f\u5ea6\u5341\u5206\u60ca\u4eba\uff0c\u654c\u4eba\u611f\u53d7\u5230\u62f3\u98ce\u7684\u65f6\u5019\uff0c\u5f80\u5f80\u5df2\u7ecf\u88ab\u6253\u5012\u5728\u5730\u3002"],
-            vwill: ["\u201c\u53ea\u6709\u51b0\u4e0e\u8840\u62e5\u6709\u5b58\u5728\u7684\u4ef7\u503c\u3002", "\u51b0\u51b7\u7684\u5fa1\u59d0\u7ef4\u8587\u513f\uff0c\u5251\u6280\u4f18\u96c5\u5374\u62e5\u6709\u81f4\u547d\u7684\u6740\u4f24\u529b\u53ec\u5524\u51b0\u971c\u5373\u53ef\u6740\u4eba\u4e8e\u65e0\u5f62\uff01\u5728\u5979\u5251\u950b\u4e4b\u4e0b\uff0c\u6240\u6709\u7684\u654c\u4eba\u51dd\u6210\u9c9c\u8840\u767e\u5408\u3002"]
+            fate: ["\u201c\u5200\u88c2\u5929\u5730\uff0c\u52bf\u5982\u98ce\u706b\u3002\u9738\u9053\u8bf7\u6218\uff0c\u65e2\u5b9a\u4e7e\u5764\u3002", "\u8fdc\u53e4\u5927\u5e1d\u72ec\u5b64\u8d25\u5929\u4e4b\u4f20\u627f\uff0c\u5728\u795e\u9b54\u4e4b\u6218\u4e2d\uff0c\u72ec\u5b64\u5927\u5e1d\u9547\u5b88\u5929\u754c\u4e1c\u9672\uff0c\u5728\u795e\u9b54\u6218\u573a\u4e2d \u4e03\u8fdb\u4e03\u51fa\uff0c\u5c60\u622e\u65e0\u6570\u9b54\u9053\u5f3a\u8005\uff0c\u4e07\u754c\u9707\u52a8\uff0c\u79f0\u4e4b\u8d25\u5929\uff0c\u5929\u754c"],
+            kross: ["\u201c\u795e\u7bad\u7834\u7a7a\uff0c\u6c14\u8d2f\u957f\u8679\u3002\u5c04\u7a0b\u4e4b\u5185\uff0c\u5c3d\u663e\u795e\u5a01\u3002", "\u795e\u9b54\u4e4b\u6218\u65f6\uff0c\u4f17\u591a\u795e\u9b54\u6270\u4e71\u4eba\u95f4\u754c\uff0c\u4eba\u754c\u6d1b\u795e\u5bab\u5bab\u4e3b\uff0c\u201c\u6d1b\u795e\u4ed9\u5b50\u201d\u6d1b\u4e91\uff0c \u773c\u89c1\u751f\u7075\u6d82\u70ad\uff0c\u6012\u800c\u51fa\u624b\uff0c\u89e3\u5c01\u843d\u65e5\u795e\u5f13\uff0c\u4ee5\u8840\u8109\u4e4b\u529b\u4e3a\u7bad\uff0c\u795e\u529b"],
+            vwill: ["\u201c\u5e7d\u51a5\u795e\u6bbf\uff0c\u52fe\u9b42\u593a\u9b44\u3002\u795e\u9570\u821e\u7a7a\uff0c\u52bf\u5982\u75be\u98ce\u3002", "\u51a5\u795e\u6bbf\u5c11\u4e3b\uff0c\u5a07\u5c0f\u7684\u8eab\u8eaf\u4e2d\u8574\u542b\u7740\u65e0\u5c3d\u7684\u529b\u91cf\uff0c\u800c\u9c9c\u8840\u51a5\u9570\u8d4b\u4e88\u4e86\u5176\u5f3a\u5927\u7684 \u8fd1\u6218\u7684\u540c\u65f6\uff0c\u8fd8\u53ef\u4ee5\u5438\u6536\u654cx\u4eba\u732e\u8840\u8865\u5145\u5df1\u8eab\uff0c\u4ee5\u6218\u517b\u6218\uff0c\u5177\u6709\u6781"],
+            shen: ["\u201c\u6b63\u592a \u6b66\u5668\u4e3a\u706b\u836f \u8fdc\u7a0b\u804c\u4e1a \u95e8\u6d3e\uff1a\u795e\u706b\u9601", "\u795e\u706b\u9601\u4e43\u6c49\u738b\u671d\u4e2d\u6700\u9690\u79d8\u7684\u673a\u6784\uff0c\u5a01\u529b\u6781\u5927\u7684\u795e\u706b\u4e4b\u9053\u53ef\u4f24\u795e\u9b54\uff0c\u662f\u6c49\u738b\u671d\u5f53\u521d\u6700\u5927\u7684\u4f9d\u4ed7\uff0c \u4f46\u4e07\u5e74\u524d\u7684\u4eba\u754c\u5927\u6218\u4e2d\uff0c\u795e\u706b\u9601\u9601\u4e3b\u201d\u795e\u706b\u9053\u4eba"],
+
         },
         text = TEXT[roleName], under = [function(_template_object) {
             var _template_fun_array = [],
@@ -1293,7 +1356,7 @@ function() {
                 var _template_varName = "";
                 for (var name in __data__) _template_varName += "var " + name + '=__data__["' + name + '"];';
                 eval(_template_varName),
-                _template_fun_array.push('<span class="name ', "undefined" == typeof _skill[0].hero ? "": baidu.template._encodeHTML(_skill[0].hero), '"></span><p class="txt">', "undefined" == typeof text[0] ? "": text[0], '"</p><h3>\u4eba\u7269\u4ecb\u7ecd</h3><p class="txt">', "undefined" == typeof text[1] ? "": text[1], '</p><h3>\u4eba\u7269\u6280\u80fd</h3><div class="skills_wrap">    <a href="javascript:void(0);" class="turn_page"></a>    <p class="skill_extra"></p>    <div class="skillsbtn_wrap">        <div class="skillsbtn_content">           ');
+                _template_fun_array.push('<span class="name ', "undefined" == typeof _skill[0].hero ? "": baidu.template._encodeHTML(_skill[0].hero), '"></span><p class="txt">', "undefined" == typeof text[0] ? "": text[0], '"</p><h3>\u5b97\u6d3e\u4ecb\u7ecd</h3><p class="txt">', "undefined" == typeof text[1] ? "": text[1], '</p><h3>\u804c\u4e1a\u6280\u80fd</h3><div class="skills_wrap">    <a href="javascript:void(0);" class="turn_page"></a>    <p class="skill_extra"></p>    <div class="skillsbtn_wrap">        <div class="skillsbtn_content">           ');
                 for (var i = 0; i < _skill.length; i++) _template_fun_array.push('             <a href="javascript:void(0);" class="icon">                <input type = "hidden" class = "skill_describe" value=', "undefined" == typeof _skill[i].describe ? "": _skill[i].describe, ">                <img src=", "undefined" == typeof(CDNPATH + "/data/" + _skill[0].hero + "/" + _skill[i].pic + ".png") ? "": baidu.template._encodeHTML(CDNPATH + "/data/" + _skill[0].hero + "/" + _skill[i].pic + ".png"), ">                <span>", "undefined" == typeof _skill[i].name ? "": _skill[i].name, '</span><em class="', "undefined" == typeof _skill[0].hero ? "": baidu.template._encodeHTML(_skill[0].hero), '"></em><i></i>            </a>           ');
                 _template_fun_array.push("        </div>    </div></div>"),
                 _template_varName = null
@@ -1312,7 +1375,10 @@ function() {
             $role_info_wrap.removeClass("floatDownIn")
         },
         200);
-        for (var $skillsbtn_content = $(".skillsbtn_content"), pics = [], i = 1; 20 >= i; i++) pics.push("http://res.hzhy.netease.com/pc/zt/20160316140351/frame/f_" + roleName + "/" + (i > 9 ? i: "0" + i) + "-min.png");
+        if (roleName !== "shen") {
+          for (var $skillsbtn_content = $(".skillsbtn_content"), pics = [], i = 1; 20 >= i; i++) pics.push("http://res.hzhy.netease.com/pc/zt/20160316140351/frame/f_" + roleName + "/" + (i > 9 ? i: "0" + i) + "-min.png");
+        }
+
         var frameX = 874,
         framY = 800;
         "kross" == roleName ? frameX = 622 : "vwill" == roleName && (frameX = 518, framY = 677);
@@ -1326,6 +1392,7 @@ function() {
     },
     theFrame = null,
     playFrames = function(e) {
+      console.log('11111'+e.callbackClass);
         $("#frame_wrap").removeClass().addClass(e.callbackClass),
         theFrame && ($(".big_pic").remove(), theFrame.setOptions({
             callback: function() {}
@@ -1341,12 +1408,16 @@ function() {
             callback: function() {
                 setTimeout(function() {
                     $("#frame_wrap").empty(),
+                    console.log(e.callbackClass);
                     $(".section2_pic_wrap").append("<div class='big_pic " + e.callbackClass + "'></div>")
                 },
                 100)
             }
         }),
-        theFrame.start()
+        $("#frame_wrap").empty(),
+        console.log(e.callbackClass);
+        $(".section2_pic_wrap").append("<div class='big_pic " + e.callbackClass + "'></div>")
+        // theFrame.start()
     },
     cardGalleryInit = function() {
         Gallery.create({

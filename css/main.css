@@ -702,18 +702,21 @@ _top:expression(eval(document.documentElement.scrollTop));
 }
 
 /* section 2*/
-.section2_info_wrap .name,.section2_info_wrap .skills_wrap .turn_page,
-.section2_info_wrap .name.vwill {
+.section2_info_wrap .skills_wrap .turn_page{
     background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/spriter/index_z_ad12f08.png);
 }
+
 .section2_info_wrap .name.vwill {
-	background-position: 0px -500px
+	background-image: url(../images/zhiye/ming/ming_name.png);
 }
-.section2_info_wrap .name {
-	background-position: -648px -384px
+.section2_info_wrap .name.fate {
+	background-image: url(../images/zhiye/gan/gan_name.png);
 }
 .section2_info_wrap .name.kross {
-	background-position: -167px -500px
+	background-image: url(../images/zhiye/luo/luo_name.png);
+}
+.section2_info_wrap .name.shen {
+	background-image: url(../images/zhiye/shen/shen_name.png);
 }
 .down_arrow {
 	background-position: -416px -275px
@@ -816,19 +819,11 @@ _top:expression(eval(document.documentElement.scrollTop));
 .section2_info_wrap .name {
 	margin-bottom: 15px;
 	display: block;
-	width: 107px;
-	height: 47px;
+	width: 250px;
+	height: 51px;
 	background-repeat: no-repeat;
 }
-.section2_info_wrap .name.vwill {
-	width: 167px;
-	height: 50px;
-	background-repeat: no-repeat;
-}
-.section2_info_wrap .name.kross {
-	width: 161px;
-	background-repeat: no-repeat;
-}
+
 .section2_info_wrap p.txt {
 	color: #a5aab5;
 	font-size: 13px;
@@ -931,7 +926,7 @@ _top:expression(eval(document.documentElement.scrollTop));
 }
 
 .section2_pic_wrap .big_pic.shen {
-    top: -80px;
+    top: -0px;
     width: 625px;
     height: 336px;
     margin-left: -490px;
@@ -1028,17 +1023,6 @@ _top:expression(eval(document.documentElement.scrollTop));
     top: 0;
     right: 0;
     opacity: .5;
-    background-repeat: no-repeat;
-}
-
-.section2_info_wrap .name {
-    background-position: -648px -384px;
-}
-.section2_info_wrap .name {
-    margin-bottom: 15px;
-    display: block;
-    width: 107px;
-    height: 47px;
     background-repeat: no-repeat;
 }
 
