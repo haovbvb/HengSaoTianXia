@@ -942,10 +942,16 @@ function() {
         }))
     },
     musicPlay = function() {
-        var e = ["http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm1.mp3", "http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm2.mp3"],
-        t = Math.random(),
-        a = e[0];
-        t > .58 && (a = e[1]);
+        var e = [{
+          mp3Path:"http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm1.mp3",
+          mp3Name:"中文在线版1.mp3"
+        }, {mp3Path:"http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm2.mp3",
+          mp3Name:"中文在线版2.mp3"},{mp3Path:"http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm2.mp3",
+            mp3Name:"中文在线版3.mp3"}],
+        // t = Math.random(),
+        j = 0
+        a = e[j].mp3Path;
+        $(".audio_name").html(e[j].mp3Name);
         var s = nie.require("nie.util.audio");
         mp3 = s.create({
             audio: [a],
@@ -957,13 +963,21 @@ function() {
             var i = $(this).index();
             console.log(i);
             if (i == 3) {
-              a = e[0]
-              mp3.playPause()
+              j += 1;
+              if (j > e.length) {
+                j = 0;
+              }
+              a = e[j].mp3Path;
+              $(".audio_name").html(e[j].mp3Name);
               mp3.play()
             }
             if (i == 0) {
-              a = e[1]
-              mp3.playPause()
+              j -= 1;
+              if (j < 0) {
+                j = e.length;
+              }
+              a = e[j].mp3Path;
+              $(".audio_name").html(e[j].mp3Name);
               mp3.play()
             }
             if (i == 2) {
@@ -1266,9 +1280,7 @@ function() {
             $role_info_wrap.removeClass("floatDownIn")
         },
         200);
-        if (roleName !== "shen") {
-          for (var $skillsbtn_content = $(".skillsbtn_content"), pics = [], i = 1; 20 >= i; i++) pics.push("http://res.hzhy.netease.com/pc/zt/20160316140351/frame/f_" + roleName + "/" + (i > 9 ? i: "0" + i) + "-min.png");
-        }
+        for (var $skillsbtn_content = $(".skillsbtn_content"), pics = [], i = 1; 20 >= i; i++) pics.push("http://res.hzhy.netease.com/pc/zt/20160316140351/frame/f_" + roleName + "/" + (i > 9 ? i: "0" + i) + "-min.png");
 
         var frameX = 874,
         framY = 800;
