@@ -787,7 +787,7 @@ var SKILL = [{
 {
     pic: "1",
     hero: "shen",
-    name: "1111111",
+    name: "\u804c\u4e1a\u6280\u80fd",
     describe: ""
 }];;
 nie.define("Pop",
@@ -953,10 +953,26 @@ function() {
             loop: !0,
             end: function() {}
         }),
-        $(".music.btn").click(function() {
-            var e = $(this);
-            e.toggleClass("music_stop"),
-            mp3.playPause()
+        $(".audio_bar a").click(function() {
+            var i = $(this).index();
+            console.log(i);
+            if (i == 3) {
+              a = e[0]
+              mp3.playPause()
+              mp3.play()
+            }
+            if (i == 0) {
+              a = e[1]
+              mp3.playPause()
+              mp3.play()
+            }
+            if (i == 2) {
+              mp3.play()
+            }
+            if (i == 1) {
+              mp3.playPause()
+            }
+
         })
     },
     browserControl = function() {
@@ -1163,9 +1179,9 @@ function() {
         function() {
             var e = $(".skill_extra"),
             t = $(this);
-            t.find("i").addClass("show"),
-            e.text(t.find(".skill_describe").val()),
-            e.fadeIn(200)
+            // t.find("i").addClass("show"),
+            // e.text(t.find(".skill_describe").val()),
+            // e.fadeIn(200)
         }),
         a.on("mouseleave", ".icon",
         function() {
@@ -1232,7 +1248,7 @@ function() {
                 for (var name in __data__) _template_varName += "var " + name + '=__data__["' + name + '"];';
                 eval(_template_varName),
                 _template_fun_array.push('<span class="name ', "undefined" == typeof _skill[0].hero ? "": baidu.template._encodeHTML(_skill[0].hero), '"></span><p class="txt">', "undefined" == typeof text[0] ? "": text[0], '"</p><h3>\u5b97\u6d3e\u4ecb\u7ecd</h3><p class="txt">', "undefined" == typeof text[1] ? "": text[1], '</p><h3>\u804c\u4e1a\u6280\u80fd</h3><div class="skills_wrap">    <a href="javascript:void(0);" class="turn_page"></a>    <p class="skill_extra"></p>    <div class="skillsbtn_wrap">        <div class="skillsbtn_content">           ');
-                for (var i = 0; i < _skill.length; i++) _template_fun_array.push('             <a href="javascript:void(0);" class="icon">                <input type = "hidden" class = "skill_describe" value=', "undefined" == typeof _skill[i].describe ? "": _skill[i].describe, ">                <img src=", "undefined" == typeof(CDNPATH + "/data/" + _skill[0].hero + "/" + _skill[i].pic + ".png") ? "": baidu.template._encodeHTML(CDNPATH + "/data/" + _skill[0].hero + "/" + _skill[i].pic + ".png"), ">                <span>", "undefined" == typeof _skill[i].name ? "": _skill[i].name, '</span><em class="', "undefined" == typeof _skill[0].hero ? "": baidu.template._encodeHTML(_skill[0].hero), '"></em><i></i>            </a>           ');
+                for (var i = 0; i < _skill.length; i++) _template_fun_array.push('             <a href="javascript:void(0);" class="icon">                <input type = "hidden" class = "skill_describe" value=', "undefined" == typeof _skill[i].describe ? "": _skill[i].describe, ">                <img src=", "undefined" == typeof(CDNPATH + "/data/" + _skill[0].hero + "/" + _skill[i].pic + ".png") ? "": baidu.template._encodeHTML(CDNPATH +"/" + _skill[0].hero + "/" + _skill[i].pic + ".png"), ">                <span>", "undefined" == typeof _skill[i].name ? "": _skill[i].name, '</span><em class="', "undefined" == typeof _skill[0].hero ? "": baidu.template._encodeHTML(_skill[0].hero), '"></em><i></i>            </a>           ');
                 _template_fun_array.push("        </div>    </div></div>"),
                 _template_varName = null
             } (_template_object);
@@ -1242,7 +1258,7 @@ function() {
         var html = under({
             _skill: skill,
             text: text,
-            CDNPATH: "../images/zhiye"
+            CDNPATH: "./images/zhiye"
         }),
         $role_info_wrap = $(".role_info_wrap");
         $role_info_wrap.html(html).addClass("floatDownIn"),

@@ -5,11 +5,13 @@
 <title>横扫天下</title>
 <!-- csss -->
 <link href="css/main.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link href="http://vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
-<link rel="stylesheet" href="http://res.nie.netease.com/comm/js/nie/ref/css/jquery.fullpage.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/jquery.fullpage.css">
 <!-- 动画 -->
 <link href="css/fakeLoader.css" rel="stylesheet" type="text/css"/>
+
+<link href="http://vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
 <!-- js -->
 <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -19,13 +21,15 @@
 </head>
 
 <body>
-<div id="loading">
-  <div id="loading-center">
-    <div id="loading-center-absolute">
-      <div id="object"></div>
-    </div>
-  </div>
-</div>
+  <div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_one"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_three"></div>
+			</div>
+		</div>
+	</div>
 <div class="wrap" id="wrap"> <a class="logo" href="/" ><img src="images/logo.png" class="logo-img"  alt = "logo"/></a>
   <div class="wrapBg blur"></div>
   <div class="pages">
@@ -55,7 +59,11 @@
       </div>
     </div>
     <div class="page page_01" >
-      <div class="page01_shu"> <img src="images/shu.png" /> </div>
+      <div class="page01_shu">
+        <div class="book_box" id="book_box">
+          <img src="images/book.png" width="1806" height="262"/>
+        </div>
+      </div>
     </div>
     <div class="page page_02">
       <div class="main mgauto pr">
@@ -184,10 +192,16 @@
       <div class="audio_bg">
         <div class="audio_player">
           <div class="audio_name">横扫天下.mp3</div>
-          <audio controls>
+          <!-- <audio controls>
             <source src="http://www.w3school.com.cn/i/horse.ogg" type="audio/ogg" />
             <source src="http://www.w3school.com.cn/i/horse.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element. </audio>
+            Your browser does not support the audio element. </audio> -->
+          <div class="audio_bar">
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -208,9 +222,9 @@
 
 <!-- other -->
 
-<script charset="utf-8" src="http://res.nie.netease.com/comm/js/jquery(mixNIE).1.11.js"></script>
-<script type="text/javascript" src="http://res.nie.netease.com/comm/js/nie/ref/jquery.superslide.js"></script>
-<script src="http://res.nie.netease.com/comm/js/nie/ref/baidutemplate.js"></script>
+<script charset="utf-8" src="js/jquery(mixNIE).1.11.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.js"></script>
+<script src="js/baidutemplate.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/lib_tab2.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/tab1.js"></script>
 <script src="js/main.js"></script>
@@ -218,7 +232,12 @@
 <script>
     $(window).load(function(){
       $("#loading").fadeOut(500);
+
+
     })
+
+    // $('.book_box').scrollLeft=960;//通过scrollTop设置滚动到200位置
+    document.getElementById("book_box").scrollLeft=document.getElementById("book_box").scrollWidth;
     </script>
 </body>
 </html>

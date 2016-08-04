@@ -522,8 +522,8 @@ html, body {
 	width: 551px;
 	height: 512px;
 	position: absolute;
-	top: 50px;
-	right: 10px;
+	top: 115px;
+	right: -27px;
 }
 .page04_title {
 	background: url("http://static.sdg-china.com/x2/pic/project/20151022_NewServer/page_04.png");
@@ -703,6 +703,7 @@ _top:expression(eval(document.documentElement.scrollTop));
 
 /* section 2*/
 .section2_info_wrap .skills_wrap .turn_page{
+	display: none;
     background-image: url(http://res.hzhy.netease.com/pc/zt/20160316140351/img/spriter/index_z_ad12f08.png);
 }
 
@@ -771,7 +772,7 @@ _top:expression(eval(document.documentElement.scrollTop));
 	transition: all .3s linear
 }
 .section2_info_wrap .tab_bar .tab:hover {
-	background-image: url(../images/zhiye/gan/gan_on.png);
+	background-image: url(../images/zhiye/gan/gan_hover.png);
 }
 .section2_info_wrap .tab_bar .tab.active span {
 	opacity: 1;
@@ -788,7 +789,7 @@ _top:expression(eval(document.documentElement.scrollTop));
 	background-image: url(../images/zhiye/luo/luo_on.png)
 }
 .section2_info_wrap .tab_bar .tab.kross_tab:hover {
-	background-image: url(../images/zhiye/luo/luo_on.png)
+	background-image: url(../images/zhiye/luo/luo_hover.png)
 }
 .section2_info_wrap .tab_bar .tab.vwill_tab {
 	background-image: url(../images/zhiye/ming/ming_n.png)
@@ -801,20 +802,20 @@ _top:expression(eval(document.documentElement.scrollTop));
 	background-image: url(../images/zhiye/ming/ming_on.png)
 }
 .section2_info_wrap .tab_bar .tab.vwill_tab:hover {
-	background-image: url(../images/zhiye/ming/ming_on.png)
+	background-image: url(../images/zhiye/ming/ming_hover.png)
 }
 .section2_info_wrap .tab_bar .tab.shen_tab {
 	background-image: url(../images/zhiye/shen/shen_n.png)
 }
 .section2_info_wrap .tab_bar .tab.shen_tab span {
-	top: -0px;
-    left: -0px;
-    height: 87px;
-    width: 77px;
+	top: -66px;
+    left: -89px;
+    height: 154px;
+    width: 165px;
 	background-image: url(../images/zhiye/shen/shen_on.png)
 }
 .section2_info_wrap .tab_bar .tab.shen_tab:hover {
-	background-image: url(../images/zhiye/shen/shen_on.png)
+	background-image: url(../images/zhiye/shen/shen_hover.png)
 }
 .section2_info_wrap .name {
 	margin-bottom: 15px;
@@ -926,10 +927,10 @@ _top:expression(eval(document.documentElement.scrollTop));
 }
 
 .section2_pic_wrap .big_pic.shen {
-    top: -0px;
-    width: 625px;
-    height: 336px;
-    margin-left: -490px;
+    top: 23px;
+    width: 700px;
+    height: 376px;
+    margin-left: -521px;
     background: url(../images/zhiye/shen/shen_big.png) center no-repeat;
 }
 #frame_wrap.fate {
@@ -959,9 +960,9 @@ _top:expression(eval(document.documentElement.scrollTop));
 	height: 100%
 }
 .skillsbtn_content .icon {
-	margin-right: 23px;
+	margin-right: 2px;
 	float: left;
-	width: 58px;
+	width: 65px;
 	height: 100%;
 	position: relative
 }
@@ -997,8 +998,8 @@ _top:expression(eval(document.documentElement.scrollTop));
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 54px;
-	height: 54px;
+	width: 49px;
+	height: 49px;
 	border: 2px solid #5f9ef6;
 	border-radius: 100%;
 	opacity: 0
@@ -1061,10 +1062,40 @@ _top:expression(eval(document.documentElement.scrollTop));
 /* shu */
 .page01_shu {
 	position: absolute;
-	width:auto;
-	height:auto;
 	top: 170px;
 	left: -80px;
+	width: 1082px;
+	height: 371px;
+	background: url(../images/shu_bg.png) no-repeat;
+	/*overflow: scroll;*/
+	display: block;
+
+}
+
+.page01_shu .book_box{
+	margin-top: 39px;
+	margin-left: 90px;
+	padding: 10px;
+	height: 282px;
+	width: 960px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	display: block;
+	scrollbar-track-color: #f00
+}
+.book_box::-webkit-scrollbar {
+    height: 6px;
+    background-color: transparent;
+}
+.book_box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+    background-color: #555;
+}
+.book_box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
 }
 
 /* form */
@@ -1177,9 +1208,24 @@ _top:expression(eval(document.documentElement.scrollTop));
 .audio_player{
 	width: 200px;
 	height: 200px;
-	margin-top: 120px;
+	margin-top: 130px;
 	margin-left: 420px;
 }
 .audio_player audio{
 	width: 200px;
+}
+
+.audio_player .audio_bar{
+	margin-top: 15px;
+	width: 100px;
+	height: 21px;
+	background: url(../images/listen_bar.png) no-repeat;
+}
+
+.audio_player .audio_bar a {
+	float: right;
+	width: 20px;
+	height: 21px;
+	display: block;
+	margin-right: 5px;
 }
