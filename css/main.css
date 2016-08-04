@@ -745,7 +745,7 @@ _top:expression(eval(document.documentElement.scrollTop));
 }
 .section2_info_wrap .tab_bar .tab {
 	float: left;
-	margin-right: 20px;
+	margin-right: 30px;
 	width: 77px;
 	height: 87px;
 	background: url(../images/zhiye/gan/gan_n.png);
@@ -808,10 +808,10 @@ _top:expression(eval(document.documentElement.scrollTop));
 	background-image: url(../images/zhiye/shen/shen_n.png)
 }
 .section2_info_wrap .tab_bar .tab.shen_tab span {
-	top: -66px;
-    left: -89px;
-    height: 154px;
-    width: 165px;
+	top: -44px;
+	left: -69px;
+	height: 133px;
+	width: 152px;
 	background-image: url(../images/zhiye/shen/shen_on.png)
 }
 .section2_info_wrap .tab_bar .tab.shen_tab:hover {
