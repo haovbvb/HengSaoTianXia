@@ -1039,7 +1039,7 @@ _top:expression(eval(document.documentElement.scrollTop));
 	width: 229px;
 	height: 48px;
 	display: block;
-	background: url(../images/video_btn_default.png) no-repeat;
+
 	text-decoration:  none;
 	font-size: 20px;
 	line-height: 48px;
@@ -1047,8 +1047,33 @@ _top:expression(eval(document.documentElement.scrollTop));
 	color: #3b2a00;
 }
 
-.video-title li a.on {
-	background: url(../images/video_btn_on.png) no-repeat;
+.video-title li.v1 a {
+	background: url(../images/v_1_03.png) no-repeat;
+	color: #f9e20a
+}
+
+.video-title li.v2 a {
+	background: url(../images/v_2_03.png) no-repeat;
+	color: #f9e20a
+}
+
+.video-title li.v3 a {
+	background: url(../images/v_3_03.png) no-repeat;
+	color: #f9e20a
+}
+
+.video-title li.v1 a.on {
+	background: url(../images/v_1.png) no-repeat;
+	color: #f9e20a
+}
+
+.video-title li.v2 a.on {
+	background: url(../images/v_2.png) no-repeat;
+	color: #f9e20a
+}
+
+.video-title li.v3 a.on {
+	background: url(../images/v_3.png) no-repeat;
 	color: #f9e20a
 }
 .video-content {
@@ -1063,8 +1088,9 @@ _top:expression(eval(document.documentElement.scrollTop));
 .page01_shu {
 	position: absolute;
 	top: 170px;
-	left: -80px;
-	width: 1082px;
+	left: 850px;
+	/*width: 1082px;*/
+	width: 52px;
 	height: 371px;
 	background: url(../images/shu_bg.png) no-repeat;
 	/*overflow: scroll;*/
@@ -1090,12 +1116,12 @@ _top:expression(eval(document.documentElement.scrollTop));
 .book_box::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
-    background-color: #555;
+    background-color: #c4a36f;
 }
 .book_box::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
     border-radius: 10px;
-    background-color: #F5F5F5;
+    background-color: #50372c;
 }
 
 /* form */

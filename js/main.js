@@ -163,6 +163,13 @@ $(function () {
         $(".wrap").stop(true).animate({left: -posFix[i][0], top: -posFix[i][1]}, 1000, 'easeInOutQuart', function () {
             //$(".wrapBg").removeClass("blur");
             $(".page").eq(i).fadeIn(500);
+
+            $(".page01_shu").animate({
+              left: '-80px',
+              width: '1082px'
+            },5000);
+
+            $("#book_box").scrollLeft(2000);
         });
 
     });
@@ -193,9 +200,8 @@ $(function () {
         //   myPlayer0.paused()
         // }
         var myPlayer = videojs('my_video_' + i);
-        alert('my-video-' + i);
-        myPlayer.play()
-        // myPlayer.paused()
+        // myPlayer.play()
+        myPlayer.paused()
         // $(".video-js").hide();
         // $(".video-js").eq(i).show();
 
