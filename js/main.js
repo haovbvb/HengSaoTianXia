@@ -173,8 +173,31 @@ $(function () {
         $(".video-title li a").removeClass("on");
         $(this).find("a").addClass("on");
 
-        $(".video-js").hide();
-        $(".video-js").eq(i).show();
+        // if (i == 0) {
+        //   alert(00000)
+        //   var myPlayer1 = videojs('my-video-1');
+        //   var myPlayer2 = videojs('my-video-2');
+        //   myPlayer1.paused()
+        //   myPlayer2.paused()
+        // }else if (i == 1) {
+        //   alert(1111)
+        //   var myPlayer0 = videojs('my-video-0');
+        //   var myPlayer2 = videojs('my-video-2');
+        //   myPlayer0.paused()
+        //   myPlayer2.paused()
+        // }else {
+        //   alert(33333)
+        //   var myPlayer1 = videojs('my-video-1');
+        //   var myPlayer0 = videojs('my-video-0');
+        //   myPlayer1.paused()
+        //   myPlayer0.paused()
+        // }
+        var myPlayer = videojs('my_video_' + i);
+        alert('my-video-' + i);
+        myPlayer.play()
+        // myPlayer.paused()
+        // $(".video-js").hide();
+        // $(".video-js").eq(i).show();
 
     });
 

@@ -945,8 +945,8 @@ function() {
         var e = [{
           mp3Path:"http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm1.mp3",
           mp3Name:"中文在线版1.mp3"
-        }, {mp3Path:"http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm2.mp3",
-          mp3Name:"中文在线版2.mp3"},{mp3Path:"http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm2.mp3",
+        }, {mp3Path:"http://dx.sc.chinaz.com/Files/DownLoad/sound1/201608/7639.mp3",
+          mp3Name:"中文在线版2.mp3"},{mp3Path:"./images/MP3.mp3",
             mp3Name:"中文在线版3.mp3"}],
         // t = Math.random(),
         j = 0
@@ -969,6 +969,7 @@ function() {
               }
               a = e[j].mp3Path;
               $(".audio_name").html(e[j].mp3Name);
+              mp3.playPause()
               mp3.play()
             }
             if (i == 0) {
@@ -978,6 +979,7 @@ function() {
               }
               a = e[j].mp3Path;
               $(".audio_name").html(e[j].mp3Name);
+              mp3.playPause()
               mp3.play()
             }
             if (i == 2) {
