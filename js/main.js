@@ -175,35 +175,33 @@ $(function () {
     });
 
     $(".video-title li").click(function () {
-        var i = $(this).index();
+        var j = $(this).index();
 
         $(".video-title li a").removeClass("on");
         $(this).find("a").addClass("on");
 
-        // if (i == 0) {
-        //   alert(00000)
-        //   var myPlayer1 = videojs('my-video-1');
-        //   var myPlayer2 = videojs('my-video-2');
-        //   myPlayer1.paused()
-        //   myPlayer2.paused()
-        // }else if (i == 1) {
-        //   alert(1111)
-        //   var myPlayer0 = videojs('my-video-0');
-        //   var myPlayer2 = videojs('my-video-2');
-        //   myPlayer0.paused()
-        //   myPlayer2.paused()
-        // }else {
-        //   alert(33333)
-        //   var myPlayer1 = videojs('my-video-1');
-        //   var myPlayer0 = videojs('my-video-0');
-        //   myPlayer1.paused()
-        //   myPlayer0.paused()
+        $(".video-js").hide();
+        $(".video-js").eq(j).show();
+        // for (var i = 0; i < 3; i++) {
+        //   videojs('my_video_' + i,{}, function(){
+        //     var myPlayer = this;
+        //     // myPlayer.play()
+        //     alert('my_video_' + i)
+        //     myPlayer.paused()
+        //   });
         // }
-        var myPlayer = videojs('my_video_' + i);
-        // myPlayer.play()
-        myPlayer.paused()
-        // $(".video-js").hide();
-        // $(".video-js").eq(i).show();
+
+
+        videojs('my_video_' + j,{}, function(){
+          var myPlayer = this;
+          myPlayer.play()
+        });
+
+
+
+
+
+
 
     });
 
