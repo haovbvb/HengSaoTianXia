@@ -192,9 +192,9 @@ $(function () {
         // }
 
 
-        videojs('my_video_' + j,{}, function(){
+        videojs('my_video_' + j).ready(function(){
           var myPlayer = this;
-          myPlayer.play()
+          // myPlayer.play()
         });
 
 
