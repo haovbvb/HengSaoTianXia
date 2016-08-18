@@ -1255,3 +1255,8 @@ _top:expression(eval(document.documentElement.scrollTop));
 	display: block;
 	margin-right: 5px;
 }
+
+.video-js{
+	width: 460px;
+	height: 280px;
+}
