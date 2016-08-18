@@ -678,105 +678,105 @@ var SKILL = [{
     pic: "1",
     hero: "fate",
     name: "\u5929\u96f7\u65a9",
-    describe: ""
+    describe: "\u53ea\u89c1\u5200\u5149\uff0c\u4e0d\u89c1\u8eab\u5f62\uff0c\u6c34\u714e\u5bf9\u81ea\u8eab\u5468\u56f4\u6240\u6709\u654c\u5bf9\u76ee\u6807\u9020\u6210\u591a\u6b21\u4f24\u5bb3\u3002"
 },
 {
     pic: "2",
     hero: "fate",
     name: " \u7ffb\u4e91\u8986\u96e8",
-    describe: ""
+    describe: "进行高速旋转，自身周围所有敌人造成多次伤害，并使其不易逃脱。"
 },
 {
     pic: "3",
     hero: "fate",
     name: "\u7206\u708e\u711a\u5929\u5200",
-    describe: ""
+    describe: "猛力砸向地面，岩浆火焰喷出，对前方所有敌人造成多次伤害。"
 },
 {
     pic: "4",
     hero: "fate",
     name: "\u5927\u6740\u56db\u65b9",
-    describe: ""
+    describe: "刀光笼罩周身，对周围敌人造成多次伤害，并在最后追加一次斩击。"
 },
 {
     pic: "5",
     hero: "fate",
     name: "\u6f5c\u9f99\u4f0f\u5730\u5578",
-    describe: ""
+    describe: "挥舞大刀，每次挥舞将内力推出，对前方所有敌人造成多次伤害。"
 },
 {
     pic: "6",
     hero: "fate",
     name: " \u795e\u9b54\u65a9\u7834",
-    describe: ""
+    describe: "挥刀高速斩击，对前方所有敌人造成多次伤害，并在最后推出刀气"
 },
 
 {
     pic: "1",
     hero: "kross",
     name: "\u7206\u88c2\u7bad  ",
-    describe: ""
+    describe: "向前方扇形范围进行多次射击，最后一击大幅击退几人。"
 },
 {
     pic: "2",
     hero: "kross",
     name: "\u5e7b\u7fbf\u7bad\u96e8",
-    describe: ""
+    describe: "向天空发射箭矢，箭雨散落地面，对范围内所有敌人造成多重伤害。"
 },
 {
     pic: "3",
     hero: "kross",
     name: "\u7a7a\u7075\u6c14\u529f ",
-    describe: ""
+    describe: "召出气功球，笼罩自身并对范围所有敌人造成巨大伤害。"
 },
 {
     pic: "4",
     hero: "kross",
     name: "\u5954\u96f7\u7bad ",
-    describe: ""
+    describe: "向前方扇形范围内发射数枚附加雷电之力的箭矢，造成目标麻痹。"
 },
 {
     pic: "5",
     hero: "kross",
     name: "\u731b\u6bd2\u7f20\u8eab ",
-    describe: ""
+    describe: "向前方发射荼毒的箭矢，对直线范围内敌方造成伤害，并施毒。"
 },
 {
     pic: "6",
     hero: "kross",
     name: "\u75be\u98ce\u56de\u65cb\u8e22",
-    describe: ""
+    describe: "反转身体使用踢技，对自身周围目标造成伤害且击飞目标。"
 },
 
 {
     pic: "1",
     hero: "vwill",
     name: "\u6076\u9b3c\u51cc\u8fdf ",
-    describe: ""
+    describe: "聚集鬼魂力量，向前方进行高速打击，对前方敌人造成多次伤害。"
 },
 {
     pic: "2",
     hero: "vwill",
     name: "\u9b3c\u706b\u71ce\u539f ",
-    describe: ""
+    describe: "将幽冥鬼火喷向地面，对前方扇形范围内地人造成多次伤害。"
 },
 {
     pic: "3",
     hero: "vwill",
     name: " \u9634\u9b42\u7f20\u8eab",
-    describe: ""
+    describe: "镶嵌方式放银魂能量球，对能量抽周围所有敌人造成多次伤害。"
 },
 {
     pic: "4",
     hero: "vwill",
     name: "\u4ea1\u7075\u67b7\u9501 ",
-    describe: ""
+    describe: "召唤冥界锁链，对锁链范围内敌人造成多次伤害，并使其无法逃脱。"
 },
 {
     pic: "5",
     hero: "vwill",
     name: "\u5e7d\u51a5\u51b2\u950b",
-    describe: ""
+    describe: "召唤冥界法盾向前冲锋，对前方直线范围内敌人造成多次伤害。"
 },
 {
     pic: "6",
@@ -788,7 +788,7 @@ var SKILL = [{
     pic: "1",
     hero: "shen",
     name: "\u804c\u4e1a\u6280\u80fd",
-    describe: ""
+    describe: "\u804c\u4e1a\u6280\u80fd"
 }];;
 nie.define("Pop",
 function() {
@@ -945,8 +945,13 @@ function() {
         var e = [{
           mp3Path:"http://res.hzhy.netease.com/pc/gw/20160225115643/data/bgm1.mp3",
           mp3Name:"中文在线版1.mp3"
+<<<<<<< HEAD
         }, {mp3Path:"http://dx.sc.chinaz.com/Files/DownLoad/sound1/201608/7606.mp3",
           mp3Name:"中文在线版2.mp3"},{mp3Path:"http://dx.sc.chinaz.com/Files/DownLoad/sound1/201608/7602.mp3",
+=======
+        }, {mp3Path:"http://dx.sc.chinaz.com/Files/DownLoad/sound1/201608/7639.mp3",
+          mp3Name:"中文在线版2.mp3"},{mp3Path:"./images/MP3.mp3",
+>>>>>>> 71dedcb1f38fd1d7e7755bdd867f7ecac8e78b46
             mp3Name:"中文在线版3.mp3"}],
         // t = Math.random(),
         j = 0
@@ -1195,9 +1200,9 @@ function() {
         function() {
             var e = $(".skill_extra"),
             t = $(this);
-            // t.find("i").addClass("show"),
-            // e.text(t.find(".skill_describe").val()),
-            // e.fadeIn(200)
+            t.find("i").addClass("show"),
+            e.text(t.find(".skill_describe").val()),
+            e.fadeIn(200)
         }),
         a.on("mouseleave", ".icon",
         function() {
